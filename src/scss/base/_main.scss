@@ -1,0 +1,50 @@
+@import "./_reset";
+@import "./_variables";
+@import "./_mixins";
+@import "./_typography";
+
+body {
+    margin: 0px;
+    background-color: $light;
+}
+
+main {
+    margin-top: 80px;
+    margin-left: 20px;
+}
+.city {
+    display: flex;
+    flex-direction: column;
+}
+
+.city_gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.city_gallery {
+    align-items: center;
+    @include tablet{
+        display: flex;
+        flex-wrap: wrap;
+    } 
+    .imgCity {
+        max-width: $size-container-gallery;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include tablet {
+            max-width: $size-container-gallery-tablet;
+            background-color: blue;
+        }
+        @include desktop {
+            max-width: $size-container-gallery-desktop;
+            background-color: red;
+        }
+        img {
+            width: 100%;
+        } 
+    }
+}

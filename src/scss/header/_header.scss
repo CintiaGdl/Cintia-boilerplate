@@ -1,0 +1,30 @@
+.header {
+  background-color: $medium;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 80px;
+  width: 100%;
+  .navigator {
+    display: flex;
+    justify-content: space-between;
+    .navigator_list {
+      display: flex;
+      justify-content: space-around;
+      .navitator_list_item{
+        margin: 30px;
+      }
+     
+    }
+    .logo {
+      width: 100px;
+      @include mobile {
+          position: fixed;
+          right: 0;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

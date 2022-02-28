@@ -1,0 +1,39 @@
+// Typography
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap');
+
+@import "./mixins";
+
+@import "./variables";
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  
+}
+
+h1,
+h2 {
+  margin: 5px 0;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: $title-mobile;
+  @include tablet {
+    font-size: $title-desktop;
+  }
+  @include desktop {
+    font-size: $title-desktop;
+  }
+}
+
+h2 {
+  font-weight: 400;
+}
+
+p { 
+  font-weight: 300;
+  text-align: justify;
+  margin-bottom: 10px;
+}
